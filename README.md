@@ -28,7 +28,7 @@ mvn package
 ```
 
 **login to PCF**  
-**TBD**
+>**TBD**
 - [ ] need to provision service-registry and circuit-breaker-dashboard into the cloudbrews space
 ```
 cf login -a api.run.pivotal.io -u jfunk@pivotal.io -o Channel -s Denver-CloudBrews
