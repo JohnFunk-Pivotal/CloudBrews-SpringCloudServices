@@ -27,7 +27,7 @@ Build the app
 mvn package
 ```
 
-**login to PCF**
+**login to PCF**  
 **TBD**
 - [ ] need to provision service-registry and circuit-breaker-dashboard into the cloudbrews space
 ```
@@ -38,7 +38,7 @@ Agency App
 cd agency
 cf push agency-jpf -p target/agency-0.0.1-SNAPSHOT.jar
 ```
-**TBD**
+**TBD**  
 - [ ] need to make sure the routes don't conflict maybee use --random-route??
 
 Company App
