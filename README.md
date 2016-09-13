@@ -51,14 +51,14 @@ cf push company-cloudbrews -p target/company-0.0.1-SNAPSHOT.jar
 - [ ] need to make sure the routes don't conflict maybee use --random-route??
 
 **Agency App**
-http://agency-jpf.cfapps.io/
+http://agency-cloudbrews.cfapps.io/
 
 ***Company App***
-https://company-jpf.cfapps.io/available
+https://company-cloudbrews.cfapps.io/available
 
 **Continuosly Poll the app using Curl**
 ```
-while true; do curl http://agency-jpf.cfapps.io/ ;done
+while true; do curl http://agency-cloudbrews.cfapps.io/ ;done
 ```
 
 **Look at the Dashboard**
