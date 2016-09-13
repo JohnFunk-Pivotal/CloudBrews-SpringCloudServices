@@ -36,7 +36,7 @@ cf login -a api.run.pivotal.io -u demo4@johnfunk.com -o Channel -s Denver-CloudB
 Agency App
 ```
 cd agency
-cf push agency-jpf -p target/agency-0.0.1-SNAPSHOT.jar
+cf push agency-cloudbrews -p target/agency-0.0.1-SNAPSHOT.jar
 ```
 **TBD**  
 - [ ] need to make sure the routes don't conflict maybee use --random-route??
@@ -45,7 +45,7 @@ Company App
 ```
 cd ..
 cd company
-cf push company-jpf -p target/company-0.0.1-SNAPSHOT.jar
+cf push company-cloudbrews -p target/company-0.0.1-SNAPSHOT.jar
 ```
 **TBD**
 - [ ] need to make sure the routes don't conflict maybee use --random-route??
