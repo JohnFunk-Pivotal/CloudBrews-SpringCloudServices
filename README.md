@@ -5,7 +5,6 @@ Spring Cloud Services is a seriese of tools to help build microservices style ap
 
 ![Spring Cloud Services Diagram](https://github.com/JohnFunk-Pivotal/CloudBrews-SpringCloudServices/blob/master/SpringCloudServices.png "Spring Cloud Services Diagram")
 
-
 In this exercise you will create two microservices one that calls another one.  However we'll make sure that call is protected by a circuit breaker.   For more of an explaination of the Circuit Breaker pattern ask the person helping with this station.
 
 
