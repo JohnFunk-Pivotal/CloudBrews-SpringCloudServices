@@ -16,66 +16,62 @@ cd springcloud
 A great description and diagram showing the Circut Breaker pattern is at:https://docs.pivotal.io/spring-cloud-services/circuit-breaker
 
 
-**download the project**
+## Download the project
 ```
 git clone https://github.com/spring-cloud-samples/traveler
 ```
 
-Change into the traveller directory
+## Change into the traveller directory
 ```
 cd traveler
 ```
 
-Build the app
+## Build the app
 ```
 mvn package
 ```
 
-**login to PCF**  
-**TBD**
-- [ ] need to provision service-registry and circuit-breaker-dashboard into the cloudbrews space
+##Login to Pivotal Cloud Foundry
 ```
 cf login -a api.run.pivotal.io -u demo4@johnfunk.com -o Channel -s Denver-CloudBrews
 ```
-Agency App
+If you are asked for a password please ask one of the helpers at the station to proide it.
+
+#Push the Agency microservice to Pivotal Cloud Foundry
 ```
 cd agency
 cf push agency-cloudbrews -p target/agency-0.0.1-SNAPSHOT.jar
 ```
-**TBD**  
-- [ ] need to make sure the routes don't conflict maybee use --random-route??
 
-Company App
+#Push the Company microservice to Pivotal Cloud Foundry
 ```
 cd ..
 cd company
 cf push company-cloudbrews -p target/company-0.0.1-SNAPSHOT.jar
 ```
-**TBD**
-- [ ] need to make sure the routes don't conflict maybee use --random-route??
 
-**Agency App**
-http://agency-cloudbrews.cfapps.io/
+## View the output of the Agency microservice
+Open the following link in a browser: http://agency-cloudbrews.cfapps.io/
 
-***Company App***
-https://company-cloudbrews.cfapps.io/available
+## View the output of the Company microservice
+Open the following link in a browser: https://company-cloudbrews.cfapps.io/available
 
-**Continuosly Poll the app using Curl**
+## Continously poll the Agency microservice with curl
 ```
 while true; do curl http://agency-cloudbrews.cfapps.io/ ;done
 ```
 
-**Look at the Dashboard**
+## Look at the Dashboard**
 https://hystrix-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io/hystrix/monitor?stream=https%3A%2F%2Fturbine-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io%2Fturbine.stream
 
-**Stop the Company App**
+## Stop the Company microservice
 You will notice the Agency App continues to run taking the default path
 ```
 cf stop company
 ```
 
-**Re-Start the Company App**
-You will notice the Agency App continues returns to calling the company app 
+##Re-Start the Company App
+You will notice the Agency microservice continues returns to calling the company microservice 
 ```
 cf start company
 ```
