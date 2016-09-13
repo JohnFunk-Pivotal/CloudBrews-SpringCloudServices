@@ -31,7 +31,7 @@ mvn package
 **TBD**
 - [ ] need to provision service-registry and circuit-breaker-dashboard into the cloudbrews space
 ```
-cf login -a api.run.pivotal.io -u jfunk@pivotal.io -o Channel -s Denver-CloudBrews
+cf login -a api.run.pivotal.io -u demo4@johnfunk.com -o Channel -s Denver-CloudBrews
 ```
 Agency App
 ```
