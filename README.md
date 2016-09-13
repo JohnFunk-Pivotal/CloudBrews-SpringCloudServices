@@ -62,7 +62,7 @@ while true; do curl http://agency-cloudbrews.cfapps.io/ ;done
 ```
 
 **Look at the Dashboard**
-https://spring-cloud-service-broker.cfapps.io/dashboard/p-circuit-breaker-dashboard/c2341566-ce4e-41e5-8602-da7d0ed07415
+https://hystrix-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io/hystrix/monitor?stream=https%3A%2F%2Fturbine-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io%2Fturbine.stream
 
 **Stop the Company App**
 You will notice the Agency App continues to run taking the default path
