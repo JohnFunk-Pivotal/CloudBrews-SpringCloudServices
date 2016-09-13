@@ -1,7 +1,12 @@
 # Station 4 Spring Cloud Services
 
 ## Introduction
-Spring Cloud Services is a seriese of tools to help build microservices style applications in Spring.  They include several of the components from the NetFlixOSS components all wrapped up and easy to use for a Spring developer.  Pivotal Cloud Foundry also provides the runtime components as pre-packaged services that are easy to use.  In this exercise you will create two microservices one that calls another one.  However we'll make sure that call is protected by a circuit breaker.   For more of an explaination of the Circuit Breaker pattern ask the person helping with this station.
+Spring Cloud Services is a seriese of tools to help build microservices style applications in Spring.  They include several of the components from the NetFlixOSS components all wrapped up and easy to use for a Spring developer.  Pivotal Cloud Foundry also provides the runtime components as pre-packaged services that are easy to use. 
+
+![Spring Cloud Services Diagram](https://github.com/JohnFunk-Pivotal/CloudBrews-SpringCloudServices/blob/master/SpringCloudServices.png "Spring Cloud Services Diagram")
+
+
+In this exercise you will create two microservices one that calls another one.  However we'll make sure that call is protected by a circuit breaker.   For more of an explaination of the Circuit Breaker pattern ask the person helping with this station.
 
 
 ##Setup
