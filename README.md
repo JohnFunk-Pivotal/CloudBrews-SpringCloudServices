@@ -1,11 +1,11 @@
 # Station 4 - Spring Cloud Services
 
 ## Introduction
-Spring Cloud Services is a seriese of tools to help build microservices style applications in Spring.  They include several of the components from the NetFlixOSS components all wrapped up and easy to use for a Spring developer.  Pivotal Cloud Foundry also provides the runtime components as pre-packaged services that are easy to use. 
+Spring Cloud Services is a series of tools to help build microservices-style applications in Spring.  They include several of the components from the NetflixOSS components all wrapped up and easy to use for a Spring developer.  Pivotal Cloud Foundry also provides the runtime components as pre-packaged services that are easy to use.
 
 ![Spring Cloud Services Diagram](https://github.com/JohnFunk-Pivotal/CloudBrews-SpringCloudServices/blob/master/SpringCloudServices.png "Spring Cloud Services Diagram")
 
-In this exercise you will create two microservices one that calls another one.  However we'll make sure that call is protected by a circuit breaker.   For more of an explaination of the Circuit Breaker pattern ask the person helping with this station.
+In this exercise you will create two microservices one that calls another one.  However we'll make sure that call is protected by a circuit breaker.   For more of an explanation of the Circuit Breaker Pattern ask the person helping with this station.
 
 
 ##Setup
@@ -19,7 +19,7 @@ cd springcloud
 ```
 
 ##Review the Circuit Breaker Pattern
-A great description and diagram showing the Circut Breaker pattern is at:https://docs.pivotal.io/spring-cloud-services/circuit-breaker
+A great description and diagram showing the Circuit Breaker Pattern is at:https://docs.pivotal.io/spring-cloud-services/circuit-breaker
 
 
 ## Download the project
@@ -27,7 +27,7 @@ A great description and diagram showing the Circut Breaker pattern is at:https:/
 git clone https://github.com/spring-cloud-samples/traveler
 ```
 
-## Change into the traveller directory
+## Change into the traveler directory
 ```
 cd traveler
 ```
@@ -41,7 +41,7 @@ mvn package
 ```
 cf login -a api.run.pivotal.io -u demo4@johnfunk.com -o Channel -s Denver-CloudBrews
 ```
-If you are asked for a password please ask one of the helpers at the station to proide it.
+If you are asked for a password please ask one of the helpers at the station to provide it.
 
 #Push the Agency microservice to Pivotal Cloud Foundry
 ```
@@ -62,7 +62,7 @@ Open the following link in a browser: http://agency-cloudbrews.cfapps.io/
 ## View the output of the Company microservice
 Open the following link in a browser: https://company-cloudbrews.cfapps.io/available
 
-## Continously poll the Agency microservice with curl
+## Continuously poll the Agency microservice with curl
 ```
 while true; do curl http://agency-cloudbrews.cfapps.io/ ;done
 ```
@@ -77,7 +77,7 @@ cf stop company
 ```
 
 ##Re-Start the Company App
-You will notice the Agency microservice continues returns to calling the company microservice 
+You will notice the Agency microservice returns to calling the Company microservice
 ```
 cf start company
 ```
