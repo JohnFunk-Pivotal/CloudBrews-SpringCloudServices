@@ -82,5 +82,5 @@ You will notice the Agency microservice continues returns to calling the company
 cf start company
 ```
 
-## Congradulations
+## Congratulations
 Congratulations you just built a Spring Cloud Services application consisting of two microservices on Google Compute Engine and pushed it to Pivotal Cloud Foundry. Talk to the helper at the station to see what's next!
