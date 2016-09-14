@@ -9,9 +9,11 @@ In this exercise you will create two microservices one that calls another one.  
 
 
 ##Setup
-Start by making a directory and changing into it
+Start by cleaning up after the last person and making a directory in your Google Compute Engine Console and changing into it.
 
 ```
+cd ~
+rm -rf springcloud
 mkdir springcloud
 cd springcloud
 ```
