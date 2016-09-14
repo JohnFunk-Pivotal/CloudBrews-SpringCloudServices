@@ -71,15 +71,15 @@ while true; do curl http://agency-cloudbrews.cfapps.io/ ;done
 https://hystrix-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io/hystrix/monitor?stream=https%3A%2F%2Fturbine-eb12265a-15ef-4ae7-b022-1fa5cb52d9ed.cfapps.io%2Fturbine.stream
 
 ## Stop the Company microservice
-You will notice the Agency App continues to run taking the default path
+You will notice the Agency App continues to run taking the default path.  Open a second terminal window and type the following command.
 ```
-cf stop company
+cf stop company-cloudbrews
 ```
 
 ##Re-Start the Company App
-You will notice the Agency microservice returns to calling the Company microservice
+You will notice the Agency microservice returns to calling the Company microservice.  In the second terminal window type the following command.
 ```
-cf start company
+cf start company-cloudbrews
 ```
 
 ## Congratulations
