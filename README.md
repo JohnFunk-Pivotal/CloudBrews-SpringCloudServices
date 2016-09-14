@@ -1,4 +1,4 @@
-# Station 4 Spring Cloud Services
+# Station 4 - Spring Cloud Services
 
 ## Introduction
 Spring Cloud Services is a seriese of tools to help build microservices style applications in Spring.  They include several of the components from the NetFlixOSS components all wrapped up and easy to use for a Spring developer.  Pivotal Cloud Foundry also provides the runtime components as pre-packaged services that are easy to use. 
