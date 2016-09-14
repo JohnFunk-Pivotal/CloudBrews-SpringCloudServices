@@ -86,4 +86,4 @@ cf start company
 Congratulations you just built a Spring Cloud Services application consisting of two microservices on Google Compute Engine and pushed it to Pivotal Cloud Foundry. Talk to the helper at the station to see what's next!
 
 ## Feedback
-Please give us feedback on this exercise: [Feedback](http://pivotal.DSUW.sgizmo.com/s3/?station=4)
+Please help us improve in the future by giving us feedback on this exercise: [Feedback](http://pivotal.DSUW.sgizmo.com/s3/?station=4)
